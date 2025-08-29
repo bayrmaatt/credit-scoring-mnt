@@ -2,6 +2,9 @@
 
 This project demonstrates a machine learning workflow for predicting FICO credit scores using synthetic data and various features relevant to creditworthiness. The notebook walks through data exploration, feature engineering, model training, and evaluation. The notebook and dataset are tailored for the Mongolian situation, reflecting local demographics, financial behaviors, and credit factors. Both the notebook and dataset are in Mongolian language.
 
+## Live Demo
+-> https://credit-scoring-fico.streamlit.app
+
 ## Dataset
 - **Source:** `fico_mn2.csv` (synthetic data)
 - **Rows:** 1000
@@ -44,3 +47,34 @@ This project demonstrates a machine learning workflow for predicting FICO credit
    ```
 2. Open `fico_scoring.ipynb` in Jupyter or VS Code.
 3. Run all cells to reproduce the analysis and results.
+
+# FICO Credit Scoring Streamlit App
+
+In addition to the ML notebook, this project includes a Streamlit application for interactively calculating FICO scores. The app simulates a real-world credit scoring process and provides personalized recommendations.
+
+## Live Demo
+https://credit-scoring-fico.streamlit.app
+
+## Features
+- Calculate FICO score (350–800 range) based on 5 major factors:
+  - Payment History (35%)
+  - Amounts Owed (30%)
+  - Credit History Length (15%)
+  - New Credit Inquiries (10%)
+  - Credit Mix (10%)
+- Detailed breakdown of each factor’s contribution.
+- Classification into categories:
+  - Маш муу, Боломжийн, Сайн, Маш сайн, Онцгой сайн
+- Personalized recommendations for score improvement.
+
+## Run Locally
+1. Install dependencies:
+   pip install streamlit pandas
+
+2. Run the app:
+   streamlit run app.py
+
+3. Open browser at:
+   http://localhost:8501
+
+Author: Bayarmaa T.
